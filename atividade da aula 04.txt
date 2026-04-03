@@ -1,0 +1,153 @@
+
+🎯  1 
+
+Transformando um Prompt Vago em um Prompt Mestre 
+
+📌 Objetivo: Melhorar a qualidade das respostas da IA usando estrutura. 
+
+ 
+
+🧩  2 — Problema escolhido 
+
+Problema: Criar uma função que ordena uma lista de números 
+
+👉 Caso simples, mas com espaço para melhorar instruções 
+
+ 
+
+❌  3 — Prompt Vago 
+
+Prompt: 
+"Faça uma função que ordena números" 
+
+⚠️ Problemas: 
+
+Linguagem não definida 
+
+Não especifica tipo de ordenação 
+
+Sem contexto de uso 
+
+Sem formato de resposta 
+
+ 
+
+🤖 4 — Resposta Ruim 
+
+def ordenar(lista): 
+   return sorted(lista) 
+ 
+
+❌ Por que é ruim? 
+
+Sem explicação 
+
+Não atende requisitos específicos 
+
+Não mostra lógica 
+
+Pouco útil para aprendizado 
+
+ 
+
+🧠  5 — Equação do Prompt 
+
+Prompt = Persona + Contexto + Restrições + Formato 
+
+👤 Persona → Quem está respondendo 
+
+🌍 Contexto → Onde será usado 
+
+⚙️ Restrições → Limitações 
+
+📦 Formato → Como responder 
+
+ 
+
+✨  6 — Prompt Estruturado 
+
+Você é um desenvolvedor Python experiente. 
+ 
+Contexto: 
+Estou aprendendo algoritmos e quero entender como ordenar listas manualmente. 
+ 
+Restrições: 
+- Não usar funções prontas como sorted() 
+- Implementar algoritmo manual (ex: bubble sort) 
+- Código simples e didático 
+ 
+Formato: 
+1. Explicação curta 
+2. Código comentado 
+ 
+
+ 
+
+— Resultado Melhor 
+
+def bubble_sort(lista): 
+   n = len(lista) 
+    
+   # Percorre toda a lista 
+   for i in range(n): 
+       for j in range(0, n - i - 1): 
+            
+           # Troca se o elemento atual for maior que o próximo 
+           if lista[j] > lista[j + 1]: 
+               lista[j], lista[j + 1] = lista[j + 1], lista[j] 
+    
+   return lista 
+ 
+
+ 
+
+🔁 8 — Refinamento 
+
+Melhorias adicionadas: 
+
+Explicação do algoritmo 
+
+Código comentado 
+
+Clareza para iniciantes 
+
+👉 Poderia evoluir ainda com: 
+
+Testes 
+
+Performance 
+
+Outros algoritmos 
+
+ 
+
+🧾  9 — Prompt Final (YAML) 
+
+persona: Desenvolvedor Python experiente 
+contexto: Ensino de algoritmos para iniciantes 
+restricoes: 
+ - Não usar funções prontas 
+ - Implementar ordenação manual 
+ - Código didático 
+formato: 
+ - Explicação breve 
+ - Código comentado 
+ 
+
+ 
+
+🚀  10 — Conclusão 
+
+✔ Prompts vagos → respostas fracas 
+
+✔ Prompts estruturados → respostas precisas 
+
+✔ Iteração é a chave 
+
+ 
+
+💬 Se quiser, posso: 
+
+transformar isso em PowerPoint (PPT pronto) 
+
+ou adaptar para um tema do seu projeto pessoal 
